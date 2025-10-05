@@ -18,3 +18,21 @@ PS C:\Users\Me>
 | `"2"`  | Account locked or too many attempts                            |
 | `"3"`  | Password error or invalid (sometimes hashed password mismatch) |
 | `"4"`  | Other errors, e.g., not allowed from this IP                   |
+
+
+
+
+password: 
+  '2' == n.WEB_ATTR_IF_SUPPORT_SHA256 
+    ? paswordAlgorithmsCookie(paswordAlgorithmsCookie(e.password) + _) 
+    : '1' == n.WEB_ATTR_IF_SUPPORT_SHA256 
+      ? paswordAlgorithmsCookie(Base64.encode(e.password)) 
+      : Base64.encode(e.password)
+
+
+
+
+function paswordAlgorithmsCookie(e) {
+  return SHA256(e)
+}
+
