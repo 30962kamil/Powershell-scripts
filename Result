@@ -9,4 +9,12 @@ Parsed login result: 0
 PS C:\Users\Me> 
 
 
-# Result "3" would mean login unsuccessful.
+
+###
+| result | meaning                                                        |
+| ------ | -------------------------------------------------------------- |
+| `"0"`  | Login success                                                  |
+| `"1"`  | Username or password incorrect                                 |
+| `"2"`  | Account locked or too many attempts                            |
+| `"3"`  | Password error or invalid (sometimes hashed password mismatch) |
+| `"4"`  | Other errors, e.g., not allowed from this IP                   |
