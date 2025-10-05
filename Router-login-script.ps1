@@ -1,5 +1,5 @@
 # ----- CONFIG -----
-$Router = "http://192.168.18.1"
+$Router = "http://192.168.0.1"
 $LoginPath = "/goform/goform_set_cmd_process"
 
 # ----- PASSWORD -----
