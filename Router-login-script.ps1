@@ -27,7 +27,7 @@ $dis = Invoke-WebRequest -Uri $indexUrl -WebSession $session -UseBasicParsing | 
 Write-Host "Fetched index.html and obtained session cookie."
 Write-Host $dis.content
 
-# ----- STEP 2: GET LD NONCE -----
+# ----- STEP 2: GET LD NONCE FOR CLIENT-SIDE ENCODING -----
 $timestamp = [int][double]::Parse((Get-Date -UFormat %s) + "000")
 $ldUrl = "$Router/goform/goform_get_cmd_process?isTest=false&cmd=LD&_=$timestamp"
 
