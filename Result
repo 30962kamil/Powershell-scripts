@@ -1,0 +1,12 @@
+PS C:\Users\Tsuki> C:\Users\Me\Desktop\Router-Login.ps1
+Fetched index.html and obtained session cookie.
+
+Obtained LD nonce: 25AS9B96FC653718202DC30B0C580BAS27EACASD&23VNBA7C021BC35B0C
+Computed final password hash.
+Login response raw: {"result":"0"}
+Parsed login result: 0
+
+PS C:\Users\Me> 
+
+
+# Result "3" would mean login unsuccessful.
